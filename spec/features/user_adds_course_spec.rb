@@ -3,6 +3,7 @@ require 'rails_helper'
 feature "User adds course" do
 
   scenario 'user successfully adds course' do
+    visit root_path
     course = FactoryGirl.build(:course)
     click_on "Add New Course"
     fill_in "Title", with: course.title
@@ -14,6 +15,7 @@ feature "User adds course" do
   end
 
   scenario 'user unsuccessfully attempts to add course' do
+    visit root_path
     course = FactoryGirl.build(:course)
     click_on "Add New Course"
     fill_in "Url", with: course.url

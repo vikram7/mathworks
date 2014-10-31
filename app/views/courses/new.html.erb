@@ -1,0 +1,40 @@
+<div>
+  Submit a new Course
+</div>
+
+<%= form_for @course do |f| %>
+  <div>
+    <div>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div>
+      <%= f.label :description %>
+      <%= f.text_area :description %>
+    </div>
+
+    <div>
+      <%= f.label :image_url %>
+      <%= f.text_field :image_url %>
+    </div>
+
+    <div>
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+    </div>
+
+    <div>
+      <%= f.label :source %>
+      <select name="source_id">
+        <% Source.all.each do |source| %>
+            <option value="<%= source.id %>"><%= source.name %></option>
+        <% end %>
+      </select>
+    </div>
+  </div>
+
+<% end %>
+
+
+
