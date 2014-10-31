@@ -7,7 +7,6 @@ class CoursesController < ApplicationController
 
   def create
     @course = Course.new(course_params)
-    @course.source_id = params["source"]
     if @course.save
       flash[:notice] = "You have successfully added a course."
       redirect_to root_path
@@ -25,7 +24,7 @@ class CoursesController < ApplicationController
   private
 
   def course_params
-    params.require(:course).permit(:title, :description, :image_url, :url)
+    params.require(:course).permit(:title, :description, :image_url, :url, :source_id)
   end
 
 end
