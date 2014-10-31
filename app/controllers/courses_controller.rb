@@ -5,4 +5,27 @@ class CoursesController < ApplicationController
     @sources = Source.all
   end
 
+  def create
+    @course = Course.new(course_params)
+    @course.source_id = params["source"]
+    if @course.save
+      flash[:notice] = "You have successfully added a course."
+      redirect_to root_path
+    else
+      flash[:notice] = "Course was not added. Please fill out all fields."
+      @sources = Source.all
+      render :new
+    end
+  end
+
+  def show
+    @course = Course.find(params[:id])
+  end
+
+  private
+
+  def course_params
+    params.require(:course).permit(:title, :description, :image_url, :url)
+  end
+
 end
