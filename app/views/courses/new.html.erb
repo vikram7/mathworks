@@ -26,12 +26,19 @@
 
     <div>
       <%= f.label :source %>
-      <select name="source_id">
-        <% Source.all.each do |source| %>
-            <option value="<%= source.id %>"><%= source.name %></option>
+      <select name="Source">
+        <% @sources.each do |source| %>
+            <option value="<%= source.id %>">
+              <%= source.name %>
+            </option>
         <% end %>
       </select>
     </div>
+
+    <div>
+      <%= f.submit "Add Course" %>
+    </div>
+
   </div>
 
 <% end %>
