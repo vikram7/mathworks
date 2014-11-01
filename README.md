@@ -25,3 +25,4 @@ October 31, 2014:
   - added feature tests
 - Built models, views and controllers for courses and sources
 - added foundation for front end
+
