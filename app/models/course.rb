@@ -3,4 +3,12 @@ class Course < ActiveRecord::Base
   validates :title, presence: true
   validates :url, presence: true, uniqueness: true
   validates :source, presence: true
+
+  def self.search(search)
+    if search.present?
+      where("title ilike :q or description ilike :q", q: "%#{search}%")
+    else
+      self.all
+    end
+  end
 end
