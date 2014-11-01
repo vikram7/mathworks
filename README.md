@@ -26,3 +26,7 @@ October 31, 2014:
 - Built models, views and controllers for courses and sources
 - added foundation for front end
 
+November 1, 2014:
+- Updated seeder file for courses
+- Added courses_path view so that the welcome page can allow for search
+- Began adding search functionality

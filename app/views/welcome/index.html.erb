@@ -1,21 +1,9 @@
 <div class="row">
-  <ul>
-    <div>
-      <% @courses.each do |course| %>
-        <div class="course">
-          <a href=<%= course_path(course.id)%>>
-            <div class="course-img">
-              <%= image_tag(course.image_url, size: "170x170") %>
-            </div>
-            <div class="course-title">
-              <%= course.title %>
-            </div>
-            <div>
-              <%= course.description %>
-            </div>
-          </a>
-        </div>
-      <% end %>
-    </div>
-  </ul>
+  <div>
+    <h1>Mathworks</h1>
+    <h2>Course Catalog</h2>
+  </div>
+  <div>
+    <%= render 'layouts/search' %>
+  </div>
 </div>

@@ -1,0 +1,12 @@
+<div class="row">
+  Enter a course in here to search for
+</div>
+
+<div class="row">
+  <%= form_tag courses_path, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
+  <% end %>
+</div>

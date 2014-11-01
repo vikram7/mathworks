@@ -1,15 +1,19 @@
-<div>
-  <%= image_tag(@course.image_url, size: "250x250") %>
-</div>
-<div>
-  <%= @course.title %>
-</div>
-<div class="source-name">
-  by <%= @course.source.name %>
-</div>
-<div>
-  <%= @course.description %>
-</div>
-<div>
-  <%= link_to @course.url, @course.url %>
+<div class="row">
+  <div class="show-img">
+    <%= image_tag(@course.image_url, size: "250x250") %>
+  </div>
+  <div class="panel">
+    <div>
+      <%= @course.title %>
+    </div>
+    <div class="source-name">
+      by <%= @course.source.name %>
+    </div>
+    <div>
+      <%= @course.description %>
+    </div>
+    <div>
+      <%= link_to @course.url, @course.url %>
+    </div>
+  </div>
 </div>
