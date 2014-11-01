@@ -29,4 +29,5 @@ October 31, 2014:
 November 1, 2014:
 - Updated seeder file for courses
 - Added courses_path view so that the welcome page can allow for search
-- Began adding search functionality
+- Added search functionality for name and description
+- Updated course show page for panelized course details and some styling
