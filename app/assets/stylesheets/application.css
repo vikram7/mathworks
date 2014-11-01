@@ -18,7 +18,8 @@
 
 .course {
   float:left;
-  margin-right:10px;
+  margin-top: 10px;
+  margin-right:30px;
   width:170px;
   height:265px;
   background-color: #f2f2f2;
@@ -26,6 +27,8 @@
   display: inline-block;
   vertical-align: top;
   font-size: 12px;
+  overflow: scroll;
+
 }
 
 .course a:link {
@@ -45,4 +48,8 @@
 .course-title {
   font-size: 16px;
   font-weight: bold;
+}
+
+.source-name {
+  font-size: 12px;
 }

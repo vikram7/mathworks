@@ -4,12 +4,12 @@
 <div>
   <%= @course.title %>
 </div>
+<div class="source-name">
+  by <%= @course.source.name %>
+</div>
 <div>
   <%= @course.description %>
 </div>
 <div>
   <%= link_to @course.url, @course.url %>
-</div>
-<div>
-  <%= @course.source.name %>
 </div>
