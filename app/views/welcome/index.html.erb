@@ -1,29 +1,21 @@
-<div>
-  Welcome to Mathworks' Course Catalog!
+<div class="row">
+  <ul>
+    <div>
+      <% @courses.each do |course| %>
+        <div class="course">
+          <a href=<%= course_path(course.id)%>>
+            <div class="course-img">
+              <%= image_tag(course.image_url, size: "170x170") %>
+            </div>
+            <div class="course-title">
+              <%= course.title %>
+            </div>
+            <div>
+              <%= course.description %>
+            </div>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </ul>
 </div>
-
-<div>
-  <%= link_to 'Add New Course', new_course_path %>
-</div>
-
-<ul>
-  <div>
-    <% @courses.each do |course| %>
-      <div>
-        <%= image_tag(course.image_url, size: "100x100") %>
-      </div>
-      <div>
-        <%= link_to course.title, course_path(course.id) %>
-      </div>
-      <div>
-        <%= course.description %>
-      </div>
-      <div>
-        <%= course.url %>
-      </div>
-      <div>
-        <%= course.source.name %>
-      </div>
-    <% end %>
-  </div>
-</ul>

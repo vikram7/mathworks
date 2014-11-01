@@ -18,3 +18,11 @@ Course Table:
 
 ![alt tag](course.png)
 
+October 31, 2014:
+
+- Added rails framework
+- Added Capybara / Rspec for testing
+  - added feature tests
+- Built models, views and controllers for courses and sources
+- added foundation for front end
+

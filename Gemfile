@@ -38,6 +38,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Foundation for front end
+gem 'foundation-rails'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
