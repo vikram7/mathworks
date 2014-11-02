@@ -44,6 +44,10 @@ gem 'foundation-rails'
 # To scrape mathworks site for seeding data
 gem 'nokogiri'
 
+group :test do
+  gem 'coveralls', require: false
+end
+
 group :development, :test do
   gem 'shoulda'
   gem 'rspec-rails'
