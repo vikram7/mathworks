@@ -19,10 +19,10 @@ class CoursesController < ApplicationController
       @course.image_url = "default.png"
     end
     if @course.save
-      flash[:notice] = "You have successfully added a course."
+      flash[:notice] = "Course added successfully!"
       redirect_to courses_path
     else
-      flash[:notice] = "Course was not added. Please fill out all fields."
+      flash[:notice] = "Sorry, you didn't enter enough information!"
       @sources = Source.all
       render :new
     end

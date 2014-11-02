@@ -10,7 +10,7 @@ feature "User adds course" do
     fill_in "Title", with: course.title
     fill_in "Description", with: course.description
     fill_in "URL", with: course.url
-    select course.source.name, from: "Source"
+    select course.source.name, from: 'course[source_id]'
     click_on "Add Course"
     expect(page).to have_content("Course added successfully!")
   end
@@ -21,7 +21,7 @@ feature "User adds course" do
 
     click_on "Add New Course"
     fill_in "URL", with: course.url
-    select course.source.name, from: "Source"
+    select course.source.name, from: 'course[source_id]'
     click_on "Add Course"
     expect(page).to have_content("Sorry, you didn't enter enough information!")
   end
