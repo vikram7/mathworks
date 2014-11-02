@@ -32,3 +32,8 @@ November 1, 2014:
 - Added search functionality for name and description
 - Updated course show page for panelized course details and some styling
 - Added unit tests for course and source
+
+November 2, 2014:
+- Added search feature test
+- Need to fix sizing issue with image urls
+- Need to fix Capybara failing on "Source" issue (feature test)
