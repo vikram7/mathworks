@@ -41,6 +41,9 @@ gem 'spring',        group: :development
 # Foundation for front end
 gem 'foundation-rails'
 
+# To scrape mathworks site for seeding data
+gem 'nokogiri'
+
 group :development, :test do
   gem 'shoulda'
   gem 'rspec-rails'

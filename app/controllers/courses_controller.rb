@@ -15,6 +15,9 @@ class CoursesController < ApplicationController
 
   def create
     @course = Course.new(course_params)
+    if @course.image_url == ""
+      @course.image_url = "default.png"
+    end
     if @course.save
       flash[:notice] = "You have successfully added a course."
       redirect_to courses_path

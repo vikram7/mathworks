@@ -28,7 +28,6 @@
   vertical-align: top;
   font-size: 12px;
   overflow: scroll;
-
 }
 
 .course a:link {
@@ -40,10 +39,8 @@
 }
 
 .course-img {
-  background-color: #fff;
-  height: 127px;
-  width: 170px;
-  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .course-title {
