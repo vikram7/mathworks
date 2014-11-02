@@ -35,3 +35,5 @@ parsethrough.each do |readable|
   Course.find_or_create_by!(title: title, description: description, url: url, image_url: image_url, source_id: Source.find_by(name: "Mathworks").id)
   puts "______________"
 end
+
+Course.where(image_url: "default.png").delete_all
