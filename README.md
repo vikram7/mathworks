@@ -39,6 +39,7 @@ November 2, 2014:
 - Added search feature test
 - Updated seed file to scrape Mathworks matlab examples website and exclude empty image courses
 - Added travis, code climate and code coverage badges
+- Added feature test for course show page
 - Need to fix sizing issue with image urls
 
 
