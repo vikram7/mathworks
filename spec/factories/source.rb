@@ -1,5 +1,7 @@
 FactoryGirl.define do
   factory :source do
-    name "edX"
+    sequence :name do |n|
+      "source #{n}"
+    end
   end
 end
