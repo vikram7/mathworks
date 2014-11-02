@@ -37,9 +37,8 @@ November 1, 2014:
 
 November 2, 2014:
 - Added search feature test
-- Need to fix sizing issue with image urls
-- Need to fix Capybara failing on "Source" issue (feature test)
 - Updated seed file to scrape Mathworks matlab examples website and exclude empty image courses
 - Added travis, code climate and code coverage badges
+- Need to fix sizing issue with image urls
 
 
