@@ -1,3 +1,4 @@
+
 <div>
   Submit a new Course
 </div>
@@ -20,12 +21,12 @@
     </div>
 
     <div>
-      <%= f.label :url %>
+      <%= f.label :url, "URL" %>
       <%= f.text_field :url %>
     </div>
 
     <div>
-      <%= f.label :source %>
+      <%= f.label :source, "Source" %>
       <%= f.collection_select(:source_id, Source.all, :id, :name) %>
     </div>
 
