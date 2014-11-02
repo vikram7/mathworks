@@ -42,6 +42,7 @@ gem 'spring',        group: :development
 gem 'foundation-rails'
 
 group :development, :test do
+  gem 'shoulda'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'pry-rails'
