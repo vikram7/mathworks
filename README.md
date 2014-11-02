@@ -31,3 +31,4 @@ November 1, 2014:
 - Added courses_path view so that the welcome page can allow for search
 - Added search functionality for name and description
 - Updated course show page for panelized course details and some styling
+
