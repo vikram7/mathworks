@@ -44,6 +44,9 @@ gem 'foundation-rails'
 # To scrape mathworks site for seeding data
 gem 'nokogiri'
 
+# pagination with kaminari
+gem 'kaminari'
+
 group :test do
   gem 'coveralls', require: false
 end
