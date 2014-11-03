@@ -68,3 +68,15 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.top-bar {
+  background: #1a6ecc;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #1a6ecc;
+}
+
+.show-form {
+  padding-top: 20px;
+}
