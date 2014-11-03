@@ -2,9 +2,9 @@ class CoursesController < ApplicationController
 
   def index
     if params[:search]
-      @courses = Course.search(params[:search]).order(:title)
+      @courses = Course.search(params[:search]).order('lower(title)').page params[:page]
     else
-      @courses = Course.order(:title)
+      @courses = Course.order('lower(title)').page params[:page]
     end
   end
 

@@ -1,4 +1,5 @@
 class Course < ActiveRecord::Base
+  paginates_per 20
   belongs_to :source
   validates :title, presence: true
   validates :url, presence: true
