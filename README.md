@@ -1,5 +1,29 @@
 [![Build Status](https://travis-ci.org/vikram7/mathworks.svg?branch=master)](https://travis-ci.org/vikram7/mathworks) [![Code Climate](https://codeclimate.com/github/vikram7/mathworks.png)](https://codeclimate.com/github/vikram7/mathworks) [![Coverage Status](https://coveralls.io/repos/vikram7/mathworks/badge.png)](https://coveralls.io/r/vikram7/mathworks)
 
+This is a course catalog for Mathworks MATLAB and Simulink courses. It allows a user to see all courses, search for courses by title, description or source (edX, Coursera, Mathworks, etc.) and add new courses.
+
+To run this app on a local machine, follow these instructions from your command line:
+
+```
+git clone git@github.com:vikram7/mathworks.git
+cd mathworks
+bundle install
+```
+
+Now setup the database and seed file (which scrapes the Mathworks MATLAB website for example course data)
+```
+rake db:create
+rake db:migrate
+rake db:seed
+```
+Now you can run the app by running the rails server:
+```
+rails s
+```
+Go to localhost:3000 in your browser to run the app.
+
+Below is a detailed tally of my work in case you don't feel like reading all my commits.
+
 October 30, 2014:
 
 I understand the requirements as follows:
@@ -40,7 +64,8 @@ November 2, 2014:
 - Updated seed file to scrape Mathworks matlab examples website and exclude empty image courses
 - Added travis, code climate and code coverage badges
 - Added feature test for course show page
-- Need to fix sizing issue with image urls
-- Need to add pagination with kaminari
+- Added pagination with Kaminari
 
+- Need to fix sizing issue with image urls
+- Need to validate URLs (for urls without both http, https)
 
