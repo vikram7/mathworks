@@ -1,6 +1,9 @@
 [![Build Status](https://travis-ci.org/vikram7/mathworks.svg?branch=master)](https://travis-ci.org/vikram7/mathworks) [![Code Climate](https://codeclimate.com/github/vikram7/mathworks.png)](https://codeclimate.com/github/vikram7/mathworks) [![Coverage Status](https://coveralls.io/repos/vikram7/mathworks/badge.png)](https://coveralls.io/r/vikram7/mathworks)
 
-This is a course catalog for Mathworks MATLAB and Simulink courses. It allows a user to see all courses, search for courses by title, description or source (edX, Coursera, Mathworks, etc.) and add new courses.
+This is a course catalog for Mathworks MATLAB and Simulink courses. It allows a user to do the following:
+- See all courses in the catalog
+- Search for courses by title, description or source (edX, Coursera, Mathworks, etc.)
+- Add new courses to the catalog
 
 To run this app on a local machine, follow these instructions from your command line:
 
@@ -46,6 +49,7 @@ Course Table:
 
 October 31, 2014:
 
+- Begin project
 - Added rails framework
 - Added Capybara / Rspec for testing
   - added feature tests
@@ -65,6 +69,5 @@ November 2, 2014:
 - Added travis, code climate and code coverage badges
 - Added feature test for course show page
 - Added pagination with Kaminari
+- Updated styling
 - Need to fix sizing issue with image urls
-- Need to validate URLs (for urls without both http, https)
-
