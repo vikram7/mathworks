@@ -68,13 +68,12 @@ October 31, 2014:
 - added foundation for front end
 
 November 1-3, 2014:
-- Updated seeder file for courses
-- Added courses_path view so that the welcome page can allow for search
-- Added search functionality for name and description
-- Updated course show page for panelized course details and some styling
 - Added unit tests for course and source
+- Created seeder with Nokogiri to scrape the MATLAB examples page and seed it into the database, excluding empty image course cards
+- Added courses_path view so that the welcome page can allow for search
+- Added search functionality for name, description and source
 - Added search feature test
-- Updated seed file to scrape Mathworks matlab examples website and exclude empty image courses
+- Updated course show page for panelized course details and some styling
 - Added travis, code climate and code coverage badges
 - Added feature test for course show page
 - Added pagination with Kaminari

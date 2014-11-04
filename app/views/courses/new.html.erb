@@ -14,12 +14,12 @@
 
         <div>
           <%= f.label :image_url, "Image URL" %>
-          <%= f.text_field :image_url, placeholder: "Enter image URL here (e.g., http://www.mathworks.com/help/releases/R2014b/examples/matlab/ThreeDPlotsGSExample_01.png)" %>
+          <%= f.url_field :image_url, placeholder: "Enter image URL here (e.g., http://www.mathworks.com/help/releases/R2014b/examples/matlab/ThreeDPlotsGSExample_01.png)" %>
         </div>
 
         <div>
           <%= f.label :url, "URL" %>
-          <%= f.text_field :url, placeholder: "Enter the course URL here (required, must contain 'http://' or 'https://' e.g. http://www.mathworks.com/examples/matlab/1097-3-d-plots)" %>
+          <%= f.url_field :url, placeholder: "Enter the course URL here (required, must contain 'http://' or 'https://' e.g. http://www.mathworks.com/examples/matlab/1097-3-d-plots)" %>
         </div>
 
         <div>
