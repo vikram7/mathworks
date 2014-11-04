@@ -79,5 +79,3 @@ November 1-3, 2014:
 - Added feature test for course show page
 - Added pagination with Kaminari
 - Updated styling
-
-- Update seeder to include a couple coursera and edx courses
