@@ -16,6 +16,9 @@ Index page with search option:
 Adding a new course:
 ![alt tag](03_add_new_course.png)
 
+Course show page:
+![alt tag](04_course_show_page.png)
+
 To run this app on a local machine, follow these instructions from your command line:
 
 ```
