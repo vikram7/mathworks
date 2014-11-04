@@ -18,12 +18,12 @@
         </div>
 
         <div>
-          <%= f.label :url, "URL *" %>
+          <%= f.label :url, "URL" %>
           <%= f.text_field :url, placeholder: "Enter the course URL here (required)" %>
         </div>
 
         <div>
-          <%= f.label :source, "Source *" %>
+          <%= f.label :source, "Source" %>
           <%= f.collection_select(:source_id, Source.all, :id, :name) %>
         </div>
 
