@@ -65,6 +65,7 @@ November 2, 2014:
 - Added travis, code climate and code coverage badges
 - Added feature test for course show page
 - Added pagination with Kaminari
+- Updated styling
 - Need to fix sizing issue with image urls
 - Need to validate URLs (for urls without both http, https)
 
