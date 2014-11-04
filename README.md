@@ -7,8 +7,13 @@ This is a course catalog for Mathworks MATLAB and Simulink courses. It allows a 
 
 See screenshots below:
 
-![alt tag](01_welcome.png)
+All courses in the catalog:
 ![alt tag](02_see_all_courses.png)
+
+Index page with search option:
+![alt tag](01_welcome.png)
+
+Adding a new course:
 ![alt tag](03_add_new_course.png)
 
 To run this app on a local machine, follow these instructions from your command line:
