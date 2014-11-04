@@ -5,6 +5,12 @@ This is a course catalog for Mathworks MATLAB and Simulink courses. It allows a 
 - Search for courses by title, description or source (edX, Coursera, Mathworks, etc.)
 - Add new courses to the catalog
 
+See screenshots below:
+
+![alt tag](01_welcome.png)
+![alt tag](02_see_all_courses.png)
+![alt tag](03_add_new_course.png)
+
 To run this app on a local machine, follow these instructions from your command line:
 
 ```
