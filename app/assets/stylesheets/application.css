@@ -50,6 +50,12 @@
   padding-right: 5px;
 }
 
+.course-img-container {
+  height: 127px;
+  overflow: hidden;
+  background: white;
+}
+
 .course-img {
   display: inline-block;
   overflow: hidden;

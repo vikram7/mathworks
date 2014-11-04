@@ -4,8 +4,10 @@
       <% @courses.each do |course| %>
         <div class="course">
           <a href=<%= course_path(course.id)%>>
-            <div class="course-img">
-              <%= image_tag(course.image_url) %>
+            <div class="course-img-container">
+              <div class="course-img">
+                <%= image_tag(course.image_url) %>
+              </div>
             </div>
             <div class="course-info">
               <div class="course-title">
