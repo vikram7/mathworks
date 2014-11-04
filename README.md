@@ -67,5 +67,3 @@ November 2, 2014:
 - Added pagination with Kaminari
 - Updated styling
 - Need to fix sizing issue with image urls
-- Need to validate URLs (for urls without both http, https)
-
